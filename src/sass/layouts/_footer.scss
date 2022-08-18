@@ -1,5 +1,112 @@
-.line{
-    background-color: var(--footer-opacity-line-color);
-    width: 100%;
-    height: 1px;
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .footer-info {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+  }
+  .line {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-bottom: 48px;
+      // justify-content: space-between;
+
+      background-color: var(--footer-opacity-line-color);
+      width: 100%;
+      height: 1px;
+    }
+  }
+  .logo-footer {
+    width: 216px;
+    margin-bottom: 48px;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 2;
+      color: var(--third-text-color);
+      letter-spacing: -0.01em;
+    }
+  }
+  a.logo {
+    display: block;
+    color: var(--accent-primary-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16;
+      margin-right: 34px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-right: 64px;
+    }
+  }
+  .footer-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      margin-bottom: 0;
+    }
+    .contacts {
+      width: 40%;
+      margin-bottom: 48px;
+      @media screen and (min-width: 768px) {
+        width: 33%;
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+      a {
+        color: var(--footer-opacity-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        &:hover {
+          color: var(--accent-primary-color);
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    a {
+        
+      color: var(--footer-text-color);
+     
+     
+    } a.first{
+        margin-right: 60px;
+      }
+      p{
+        color: var(--footer-text-color);
+        margin-top: 32px;
+        @media screen and (min-width: 768px) {
+          margin-top: 0;
+        }
+      }
+  }
 }
