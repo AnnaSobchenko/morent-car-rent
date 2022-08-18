@@ -1,45 +1,74 @@
 <header class="header">
-<div class="container header-menu">
-  <div class="burger-menu">
-    <button class="btn" >
-      <svg class="icon-menu">
-        <use href="./images/symbol-defs.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <picture class="image">
-      <source
-        srcset="./images/user-mob-1x.png 1x, ./images/user-mob-2x.png 2x"
-        media="(max-width: 767px)" />
-      <img src="./images/user-mob-1x.png" alt="profile-user"
-    /></picture>
-  </div>
-  <a class="navbar-brand logo" href="#">MORENT</a>
-  <div class="search-filter">
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1">
-        <svg class="icon-search">
-          <use href="./images/symbol-defs.svg#icon-search"></use>
-        </svg>
-      </span>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Search something here"
-        aria-label="Username"
-        aria-describedby="basic-addon1"
-      />
-      <button class="btn btn-outline-primary btn-filter btn-desktop">
-        <svg class="icon-filter ">
-          <use href="./images/symbol-defs.svg#icon-filter"></use>
+  <div class="container header-menu">
+    <div class="burger-menu">
+      <button class="btn">
+        <svg class="icon-menu">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </button>
+      <picture class="image">
+        <source
+          srcset="./images/user-mob-1x.png 1x, ./images/user-mob-2x.png 2x"
+          media="(max-width: 767px)" />
+        <img src="./images/user-mob-1x.png" alt="profile-user"
+      /></picture>
     </div>
-    <button class="btn btn-outline-primary btn-filter  btn-mobile">
-      <svg class="icon-filter">
-        <use href="./images/symbol-defs.svg#icon-filter"></use>
-      </svg>
-    </button>
+    <div class="logo-filter">
+      <a class="navbar-brand logo" href="#">MORENT</a>
+      <div class="search-filter">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">
+            <svg class="icon-search">
+              <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search something here"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+          <button class="btn btn-outline-primary btn-filter btn-desktop">
+            <svg class="icon-filter">
+              <use href="./images/symbol-defs.svg#icon-filter"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="btn btn-outline-primary btn-filter btn-mobile">
+          <svg class="icon-filter">
+            <use href="./images/symbol-defs.svg#icon-filter"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="options">
+      <div class="notification">
+        <svg class="icon-filter">
+          <use href="./images/symbol-defs.svg#icon-heart-fill"></use>
+        </svg>
+      </div>
+      <div class="notification">
+        <span
+          class="position-absolute translate-middle bg-danger border border-light rounded-circle"
+        >
+          <span class="visually-hidden">New alerts</span>
+        </span>
+        <svg class="icon-notification">
+          <use href="./images/symbol-defs.svg#icon-notification"></use>
+        </svg>
+      </div>
+      <div class="notification">
+        <svg class="icon-filter">
+          <use href="./images/symbol-defs.svg#icon-setting"></use>
+        </svg>
+      </div>
+      <picture class="image">
+        <source
+          srcset="./images/user-desk-1x.png 1x, ./images/user-desk-2x.png 2x"
+          media="(min-width: 768px)" />
+        <img src="./images/user-desk-1x.png" alt="profile-user"
+      /></picture>
+    </div>
   </div>
-  <!-- <div class="background"></div> -->
-</div>
 </header>

@@ -6,7 +6,25 @@
 .header-menu {
   padding-top: 32px;
   padding-bottom: 32px;
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .logo-filter {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
   a.logo {
     display: block;
     color: var(--accent-primary-color);
@@ -14,27 +32,32 @@
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 24px;
-  }
-  .icon-menu {
-    width: 24px;
-    height: 24px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 34px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-right: 64px;
+    }
   }
   .input-group-text {
     background-color: inherit;
     border-right: none;
     border-color: var(--stroke-opacity-color);
     @media screen and (min-width: 768px) {
-        border: none;
-      }
+      border: none;
+    }
   }
   input.form-control {
     border-left: none;
     width: 70%;
     height: 48px;
+    @media screen and (min-width: 768px) {
+      height: 44px;
+      width: 50%;
+    }
   }
   .icon-search {
-    width: 24px;
-    height: 24px;
     background-color: transparent;
   }
 
@@ -51,28 +74,34 @@
     display: flex;
     border-color: var(--stroke-opacity-color);
     @media screen and (min-width: 768px) {
-        border: 1px solid  var(--stroke-opacity-color);
-        border-radius: 22px;
-        width: 492px;
+      border: 1px solid var(--stroke-opacity-color);
+      border-radius: 22px;
+      width: 292px;
     }
-    .btn-desktop{
-        display: none !important;
-        @media screen and (min-width: 768px) {
-            display: block !important;
-            border: none;
-          }
+    @media screen and (min-width: 1280px) {
+      border: 1px solid var(--stroke-opacity-color);
+      border-radius: 22px;
+      width: 492px;
     }
-   
+    .btn-desktop {
+      display: none !important;
+      @media screen and (min-width: 768px) {
+        display: block !important;
+        border: none;
+      }
+    }
 
     div.mb-3 {
       margin-bottom: 0 !important;
       margin-right: 16px;
       input {
         border-color: var(--stroke-opacity-color);
-      
-      @media screen and (min-width: 768px) {
-        border: none;
-      }}
+
+        @media screen and (min-width: 768px) {
+          border: none;
+          margin-right: 0;
+        }
+      }
     }
     .btn-filter {
       display: block;
@@ -83,17 +112,43 @@
       :hover {
         fill: var(--fill-svg-third-color);
       }
-      
+      @media screen and (min-width: 768px) {
+        height: 44px;
+        width: 44px;
+      }
     }
 
-    .icon-filter {
-      width: 24px;
-      height: 24px;
+    .btn-mobile {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
-    .btn-mobile{
-       @media screen and (min-width: 768px) {
-          display: none;
-         }
-   }
+  }
+  .options {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 214px;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 244px;
+    }
+  }
+  .notification {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--stroke-opacity-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .rounded-circle {
+      top: 8px;
+      left: 39px;
+      padding: 5px;
+    }
   }
 }
