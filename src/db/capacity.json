@@ -1,0 +1,18 @@
+[
+  {
+    "person":"2Person",
+    "count": 10
+  },
+  {
+    "person":"4Person",
+    "count": 14
+  },
+  {
+    "person":"6Person",
+    "count": 12
+  },
+  {
+    "person":"8 or More",
+    "count": 16
+  }
+]

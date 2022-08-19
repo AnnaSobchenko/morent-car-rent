@@ -1,3 +1,93 @@
-.home{
-   min-height: calc( 100vh - 124px - 480px );
+.home {
+  min-height: calc(100vh - 124px - 480px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  picture {
+    margin-bottom: 0;
+  }
+  .gallery {
+    width: 492px;   
+    @media screen and (min-width: 1440px) {
+       margin-right: 32px;
+    }
+  }
+  .card {
+    background-color: transparent;
+    border: none;
+
+    h2 {
+      width: 372px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.01em;
+    }
+    p {
+      width: 284px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    }
+    &__large {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 492px;
+      height: 360px;
+      background: url(../images/rectangle.svg);
+      background-size: 75px 120px;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    &__large-image {
+      display: flex;
+      justify-content: center;
+    }
+    &__views {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__view1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(../images/rectangle.svg);
+      background-size: 19px 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 148px;
+      height: 124px;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    &__describe {
+      width: 492px;
+      height: 508px;
+      background-color: var(--secondary-bg-color);
+      padding: 24px;
+
+      border-radius: 10px;
+    }
+  }
 }

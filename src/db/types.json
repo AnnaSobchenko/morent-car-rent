@@ -1,0 +1,8 @@
+[
+  { "type": "Sport", "count": 10 },
+  { "type": "SUV", "count": 12 },
+  { "type": "MVP", "count": 16 },
+  { "type": "Sedan", "count": 20 },
+  { "type": "Coupe", "count": 14 },
+  { "type": "Hatchback", "count": 14 }
+]
