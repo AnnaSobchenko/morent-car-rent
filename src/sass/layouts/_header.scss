@@ -103,6 +103,14 @@
         }
       }
     }
+    .btn:hover{
+      border-radius: 50%;
+      background-color: transparent;     
+      overflow: hidden;
+      svg{
+        box-shadow: 1px 1px 5px var(--accent-primary-color);
+      }
+    }
     .btn-filter {
       display: block;
       width: 48px;

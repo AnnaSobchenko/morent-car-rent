@@ -16,10 +16,11 @@
   .gallery {
     width: 327px;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      width: 492px;
+    }
     @media screen and (min-width: 1440px) {
       margin-right: 32px;
-      margin-bottom: 0;
-      width: 492px;
     }
   }
   .card {
@@ -68,9 +69,13 @@
       justify-content: space-between;
       width: 327px;
       height: 232px;
-      background: url(../images/rectangle.svg);
+      background: url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x;
       background-size: 40px 78px;
+      background-position: 20px 0, 0 78px, 20px 156px;
       border-radius: 10px;
+      -webkit-background-composite: 1;
       overflow: hidden;
       padding: 24px;
       margin-bottom: 24px;
@@ -78,6 +83,7 @@
         width: 492px;
         height: 360px;
         background-size: 75px 120px;
+        background-position: 38px 0, 0px 119.9px, 38px 239px;
       }
     }
     &__large-image {
@@ -87,13 +93,22 @@
     &__views {
       display: flex;
       justify-content: space-between;
+      width: 327px;
+      @media screen and (min-width: 768px) {
+        width: 492px;
+      }
     }
     &__view1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url(../images/rectangle.svg);
+      background: url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x;
       background-size: 10px 14px;
+      background-repeat: space repeat-x;
+      background-position: 50% 0, 0 14px, 50% 28px, 0 42px;
       border-radius: 10px;
       overflow: hidden;
       width: 96px;
@@ -103,9 +118,10 @@
       @media screen and (min-width: 768px) {
         width: 148px;
         height: 124px;
-        background-size: 75px 120px;
         background-size: 19px 30px;
+        background-position: 50% 0, 0 30px, 50% 60px, 0 90px;
       }
+     
     }
     &__describe {
       width: 327px;
@@ -117,6 +133,7 @@
         width: 492px;
         height: 508px;
         padding: 24px;
+        padding: 24px;
       }
       h2 {
         margin-bottom: 6px;
@@ -124,12 +141,33 @@
         font-size: 20px;
         line-height: 1.4;
         color: var(--secondary-text-color);
+        @media screen and (min-width: 768px) {
+          font-size: 32px;
+          margin-bottom: 10px;
+        }
       }
       p.describe {
         font-size: 12px;
         line-height: 2;
         letter-spacing: -0.02em;
         margin-bottom: 16px;
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 32px;
+        }
+      }
+      .title-reviewer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg {
+          width: 12px;
+          height: 12px;
+          @media screen and (min-width: 768px) {
+            width: 24px;
+            height: 24px;
+          }
+        }
       }
     }
   }
@@ -137,17 +175,28 @@
     display: flex;
     margin-right: 4px;
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 34px;
+    }
     svg {
       width: 12px;
       height: 12px;
+      @media screen and (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+      }
     }
     p {
       font-weight: 500;
       font-size: 12px;
-      line-height: 15px;
+      line-height: 1.25;
       display: flex;
       align-items: center;
       letter-spacing: 0.02em;
+      margin-left: 8px;
+      @media screen and (min-width: 768px) {
+        font-size: 14x;
+      }
     }
   }
   .list {
@@ -156,48 +205,78 @@
     row-gap: 16px;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 68px;
+    }
     li {
       display: flex;
       justify-content: space-between;
       .option {
         font-weight: 500;
         font-size: 12px;
-        line-height: 15px;
+        line-height: 1.25;
         display: flex;
         align-items: center;
         letter-spacing: -0.01em;
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+          font-weight: 400;
+        }
       }
       .value {
         font-weight: 600;
         font-size: 12px;
-        line-height: 15px;
+        line-height: 1.25;
         display: flex;
         align-items: center;
         text-align: right;
         letter-spacing: -0.02em;
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+        }
       }
     }
   }
   .price-button {
     display: flex;
     justify-content: space-between;
+    button {
+      width: 140px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
   }
   .full-price {
     text-decoration: line-through;
     font-weight: 700;
     font-size: 12px;
-    line-height: 15px;    
+    line-height: 1.25;
     color: var(--third-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
   .sale-price {
     font-weight: 700;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+    }
     span {
       font-weight: 700;
       font-size: 12px;
-      line-height: 15px;
+      line-height: 1.25;
       color: var(--third-text-color);
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 }
