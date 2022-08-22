@@ -1,11 +1,73 @@
 <header class="header">
   <div class="container header-menu">
     <div class="burger-menu">
-      <button class="btn">
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
         <svg class="icon-menu">
           <use href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </button>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a class="navbar-brand logo-burger" href="#">MORENT</a>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          
+            <ul class="options-burger">
+              <li class="notification">
+                <svg class="icon-filter">
+                  <use href="./images/symbol-defs.svg#icon-heart-fill"></use>
+                </svg>
+              </li>
+              <li class="notification">
+                <span
+                  class="position-absolute translate-middle bg-danger border border-light rounded-circle"
+                >
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+                <svg class="icon-notification">
+                  <use href="./images/symbol-defs.svg#icon-notification"></use>
+                </svg>
+              </li>
+              <li class="notification">
+                <svg class="icon-filter">
+                  <use href="./images/symbol-defs.svg#icon-setting"></use>
+                </svg>
+              </li>
+            </ul>
+            <!-- Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc. -->
+          
+          <!-- <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+         
+          </button>
+          
+        </div> -->
+        </div>
+      </div>
+
       <picture class="image">
         <source
           srcset="./images/user-mob-1x.png 1x, ./images/user-mob-2x.png 2x"
