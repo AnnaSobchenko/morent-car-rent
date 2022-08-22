@@ -1,8 +1,8 @@
 // import Swiper from "swiper";
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  spaceBetween: 30,
+  spaceBetween: 19,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

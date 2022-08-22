@@ -1,10 +1,10 @@
 .home {
-  min-height: calc(100vh - 124px - 480px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
+
   @media screen and (min-width: 1440px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -16,11 +16,17 @@
   .gallery {
     width: 327px;
     margin-bottom: 32px;
+
     @media screen and (min-width: 768px) {
-      width: 492px;
+      width: 694px;
+      display: flex;
+      justify-content: center;
     }
     @media screen and (min-width: 1440px) {
+      display: block;
       margin-right: 32px;
+      width: 492px;
+      margin-bottom: 0;
     }
   }
   .card {
@@ -61,6 +67,7 @@
       @media screen and (min-width: 1440px) {
         flex-direction: row;
         justify-content: flex-end;
+        margin-bottom: 32px;
       }
     }
     &__large {
@@ -80,8 +87,18 @@
       padding: 24px;
       margin-bottom: 24px;
       @media screen and (min-width: 768px) {
+        width: 530px;
+        height: 405px;
+        margin-bottom: 0;
+        margin-right: 16px;
+        background-size: 75px 120px;
+        background-position: 38px 0, 0px 119.9px, 38px 239px;
+      }
+      @media screen and (min-width: 1440px) {
         width: 492px;
         height: 360px;
+        margin-bottom: 24px;
+        margin-right: 0;
         background-size: 75px 120px;
         background-position: 38px 0, 0px 119.9px, 38px 239px;
       }
@@ -95,7 +112,12 @@
       justify-content: space-between;
       width: 327px;
       @media screen and (min-width: 768px) {
+        width: 148px;
+        flex-direction: column;
+      }
+      @media screen and (min-width: 1440px) {
         width: 492px;
+        flex-direction: row;
       }
     }
     &__view1 {
@@ -118,6 +140,7 @@
       @media screen and (min-width: 768px) {
         width: 148px;
         height: 124px;
+        margin-bottom: 0;
         background-size: 19px 30px;
         background-position: 50% 0, 0 30px, 50% 60px, 0 90px;
       }
@@ -128,11 +151,14 @@
       background-color: var(--secondary-bg-color);
       padding: 16px;
       border-radius: 10px;
+      margin-bottom: 32px;
       @media screen and (min-width: 768px) {
-        width: 492px;
+        width: 694px;
         height: 508px;
         padding: 24px;
-        padding: 24px;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 492px;
       }
       h2 {
         margin-bottom: 6px;
@@ -158,13 +184,12 @@
       .title-reviewer {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         svg {
-          width: 12px;
-          height: 12px;
+         display: none;
           @media screen and (min-width: 768px) {
-            width: 24px;
-            height: 24px;
+            display: block;
+            width: 20px;
+            height: 19px;
           }
         }
       }
@@ -241,6 +266,7 @@
     justify-content: space-between;
     button {
       width: 140px;
+      height: 56px;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.25;
@@ -281,18 +307,41 @@
   .recent-car__list,
   .recomendation-car__list {
     position: relative;
-    height: 100%;
-    display: flex;
-    // overflow: hidden;
+    margin-bottom: 32px;
+    // display: flex;
     li {
       margin-right: 16px;
     }
   }
+  .view-all {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.286;
+      display: flex;
+      align-items: center;
+
+      color: var(--third-text-color);
+    }
+  }
+  .view-all-recomendation-btn,
+  .view-all-recent-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: var(--accent-primary-color);
+  }
   .gradient-list {
-    // position: relative;
     .gradient {
       width: 92px;
-      height: 100%;
+      height: 286px;
       position: absolute;
       top: 0;
       right: 0;
@@ -302,6 +351,9 @@
         transparent 92px
       );
       z-index: 2;
+      @media screen and (min-width: 768px) {
+        height: 388px;
+      }
     }
   }
 }
@@ -311,22 +363,20 @@
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  
+  background: var(--secondary-bg-color);
 
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  
+  
 }
-

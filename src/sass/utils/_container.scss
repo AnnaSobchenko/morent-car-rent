@@ -1,4 +1,4 @@
-.container {
+.container-morent {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -6,11 +6,13 @@
     padding-right: 24px;
     @media screen and (min-width: 375px) {
       width: 375px;
+      
     }
     @media screen and (min-width: 768px) {
       padding-left: 37px;
       padding-right: 37px;
       width: 768px;
+      min-width: 768px;
     }
     @media screen and (min-width: 1440px) {
       padding-left: 32px;
