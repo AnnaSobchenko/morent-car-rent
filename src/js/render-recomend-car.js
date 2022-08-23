@@ -105,9 +105,14 @@ cardRecomEL.innerHTML = cards;
 let isShowRecomend = false;
 const buttonRecom = document.querySelector('.view-all-recomendation-btn');
 const carsRenderRecomEl = document.querySelector('.recomendation-car__list');
+const gradientRenderRecomEl = document.querySelector('.gradient-recom');
+
 buttonRecom.addEventListener('click', () => {
   isShowRecomend
     ? carsRenderRecomEl.classList.add('view-all-cars')
     : carsRenderRecomEl.classList.remove('view-all-cars');
+  isShowRecomend
+    ? gradientRenderRecomEl.classList.add('visually-hidden')
+    : gradientRenderRecomEl.classList.remove('visually-hidden');
   isShowRecomend = !isShowRecomend;
 });

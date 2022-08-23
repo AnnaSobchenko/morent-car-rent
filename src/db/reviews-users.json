@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0",
+    "user": "Alex Stanton",
+    "profession": "CEO at Bukalapak",
+    "date": "21 July 2022",
+    "count-stars": 4,
+    "review": "We are very happy with the service from the MORENT App. Morent has a low price . . . ",
+    "image":"image0"
+  },
+  {
+    "id": "1",
+    "user": "Skylar Dias",
+    "profession": "CEO at Amazon",
+    "date": "20July 2022",
+    "count-stars": 4,
+    "review": "We are greatly helped by the services of the MORENT Application. Morent has a low . . .",
+    "image":"image1"
+  }
+]

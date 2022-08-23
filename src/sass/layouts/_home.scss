@@ -342,7 +342,8 @@
     color: var(--accent-primary-color);
   }
   .gradient-list {
-    .gradient {
+    .gradient-recent,
+    .gradient-recom {
       width: 92px;
       height: 286px;
       position: absolute;
@@ -379,10 +380,11 @@
 
 .main-part {
   @media screen and (min-width: 1440px) {
-  width: calc( 100% - 360px );
-  padding-left: 32px;}
+    width: calc(100% - 360px);
+    padding-left: 32px;
+  }
 }
-.left{
+.left {
   position: absolute;
   top: 0;
   left: 0;
@@ -410,8 +412,8 @@
     width: 360px;
     margin-top: -32px;
     margin-bottom: -32px;
-    border-radius: 0;   
-    margin-left: -60px; 
+    border-radius: 0;
+    margin-left: -60px;
   }
   .filter-box {
     width: 25%;
@@ -420,16 +422,54 @@
       margin-bottom: 52px;
     }
   }
-  .filer-name{
+  .filer-name {
     font-weight: 600;
-font-size: 12px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.02em;
-color: var(--fifth-text-color);
-margin-bottom: 14px;
-@media screen and (min-width: 1440px) {
-margin-bottom: 28px;}
+    font-size: 12px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--fifth-text-color);
+    margin-bottom: 14px;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 28px;
+    }
+  }
+}
+.reviews-users {
+  width: 327px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: var(--secondary-bg-color);
+margin-bottom: 32px;
+
+  .title {
+    display: flex;
+    margin-bottom: 24px;
+
+    h2 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--secondary-text-color);
+      margin-right: 12px;
+    }
+    .reviews-users-count {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.25;
+      color: var(--fouth-text-color);
+      background-color: var(--accent-primary-color);
+      border-radius: 8px;
+      width: 44px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .reviews-users__list {
   }
 }

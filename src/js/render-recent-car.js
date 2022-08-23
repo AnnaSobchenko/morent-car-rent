@@ -91,12 +91,16 @@ cardEL.innerHTML = cards;
 
 const button = document.querySelector('.view-all-recent-btn');
 const carsRenderEl = document.querySelector('.recent-car__list');
+const gradientRenderRecentEl = document.querySelector('.gradient-recom');
+
 let isShowRecent = false;
 
 button.addEventListener('click', () => {
   isShowRecent
     ? carsRenderEl.classList.add('view-all-cars')
     : carsRenderEl.classList.remove('view-all-cars');
+  isShowRecent
+    ? gradientRenderRecentEl.classList.add('visually-hidden')
+    : gradientRenderRecentEl.classList.remove('visually-hidden');
   isShowRecent = !isShowRecent;
 });
-
