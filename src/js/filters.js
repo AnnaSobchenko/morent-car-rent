@@ -71,7 +71,6 @@ const button = document.querySelector('.btn-desktop');
 let isShow = false;
 
 button.addEventListener('click', () => {
-  console.log('isShow', isShow);
   !isShow
     ? filterEl.classList.remove('visually-hidden')
     : filterEl.classList.add('visually-hidden');

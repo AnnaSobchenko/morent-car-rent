@@ -182,7 +182,7 @@
     "fuel": 70,
     "capacity": 4,
     "steering": "Manual",
-    "favorite": false,
+    "favorite": true,
     "stars": 4,
     "reviewer": 500,
     "title": "Sports car with the best design and acceleration",

@@ -15,7 +15,7 @@ const cards = cars
     let imagesrc = '';
     let favorite = false;
     let classhidden = '';
-    favorite = card.favorite ? 'heart-stroke' : 'heart';
+    favorite = !card.favorite ? 'heart-stroke' : 'heart';
     classhidden = card.fullrent === card.salesprice && 'visually-hidden';
     switch (card.name) {
       case 'Nissan GT-R':
@@ -55,6 +55,7 @@ const cards = cars
    </div>
    <div class="image-box">
    <img src=${imagesrc} alt="car" />
+   <div class="gradient-card"></div>
    </div>
      <div class="options-svg">
        <div class="info">
@@ -87,3 +88,15 @@ const cards = cars
   })
   .join('');
 cardEL.innerHTML = cards;
+
+const button = document.querySelector('.view-all-recent-btn');
+const carsRenderEl = document.querySelector('.recent-car__list');
+let isShowRecent = false;
+
+button.addEventListener('click', () => {
+  isShowRecent
+    ? carsRenderEl.classList.add('view-all-cars')
+    : carsRenderEl.classList.remove('view-all-cars');
+  isShowRecent = !isShowRecent;
+});
+

@@ -9,7 +9,7 @@ import imagerolls from '../images/cars/rolls/rolls-royce-large-desk-1x-min.png';
 
 const cardRecomEL = document.querySelector('.recomendation-car__list');
 
-const recomendation = cars.filter(el => el.favorite !== true);
+const recomendation = cars.filter(el => el.favorite === true);
 
 const cards = recomendation
   .map(card => {
@@ -17,7 +17,7 @@ const cards = recomendation
     let imagesrc = '';
     let favorite = false;
     let classhidden = '';
-    favorite = card.favorite ? 'heart-stroke' : 'heart';
+    favorite = !card.favorite ? 'heart-stroke' : 'heart';
     classhidden = card.fullrent === card.salesprice && 'visually-hidden';
 
     switch (card.name) {
@@ -66,6 +66,7 @@ const cards = recomendation
      </div>
  <div class="image-box">
  <img src=${imagesrc} alt="car" />
+ <div class="gradient-card"></div>
  </div>
   
   <div class="options-svg">
@@ -100,3 +101,13 @@ const cards = recomendation
   .join('');
 
 cardRecomEL.innerHTML = cards;
+
+let isShowRecomend = false;
+const buttonRecom = document.querySelector('.view-all-recomendation-btn');
+const carsRenderRecomEl = document.querySelector('.recomendation-car__list');
+buttonRecom.addEventListener('click', () => {
+  isShowRecomend
+    ? carsRenderRecomEl.classList.add('view-all-cars')
+    : carsRenderRecomEl.classList.remove('view-all-cars');
+  isShowRecomend = !isShowRecomend;
+});
