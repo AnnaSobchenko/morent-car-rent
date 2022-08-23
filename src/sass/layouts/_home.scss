@@ -81,6 +81,7 @@
       height: 232px;
       background: url('../images/rectangle.svg') repeat-x,
         url('../images/rectangle.svg') repeat-x,
+        url('../images/rectangle.svg') repeat-x,
         url('../images/rectangle.svg') repeat-x;
       background-size: 40px 78px;
       background-position: 20px 0, 0 78px, 20px 156px;
@@ -90,14 +91,16 @@
       padding: 24px;
       margin-bottom: 24px;
       @media screen and (min-width: 768px) {
+        padding: 20px;
         width: 530px;
         height: 405px;
         margin-bottom: 0;
         margin-right: 16px;
         background-size: 75px 120px;
-        background-position: 38px 0, 0px 119.9px, 38px 239px;
+        background-position: 38px 0, 0px 119.9px, 38px 239px, 0 359px;
       }
       @media screen and (min-width: 1440px) {
+        padding: 20px;
         width: 492px;
         height: 360px;
         margin-bottom: 24px;
@@ -109,6 +112,19 @@
     &__large-image {
       display: flex;
       justify-content: center;
+      width: 327px;
+      height: 232px;
+      border-radius: 16px;
+      overflow: hidden;
+      align-items: flex-end;
+      @media screen and (min-width: 768px) {
+        width: 492px;
+        height: 360px;
+      }
+      img {
+        border-radius: 10px;
+        transform: scale(0.8);
+      }
     }
     &__views {
       display: flex;
@@ -146,6 +162,10 @@
         height: 124px;
         margin-bottom: 0;
         background-size: 19px 30px;
+        background-position: 50% 0, 0 30px, 50% 60px, 0 90px, 50% 120px;
+      }
+      @media screen and (min-width: 1440px) {
+        height: 124px;
         background-position: 50% 0, 0 30px, 50% 60px, 0 90px;
       }
     }
@@ -488,18 +508,26 @@
     outline: none;
     border: none;
     @media screen and (min-width: 1440px) {
-      // display: none;
     }
   }
 }
 .active-view {
-  picture {
+  picture,img {
     transform: scale(0.89);
   }
   border: 2px solid var(--accent-primary-color);
   border-radius: 10px;
 }
 
-.home-filter{  
+.home-filter {
   justify-content: space-between;
+}
+
+.height {
+  img {
+    height: 72px !important;
+    @media screen and (min-width: 768px) {
+      height: 120px !important;
+    }
+  }
 }
