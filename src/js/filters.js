@@ -3,6 +3,7 @@ import capacity from '../db/capacity.json';
 import cars from '../db/cars.json';
 
 const filterEl = document.querySelector('.filters');
+const homeEl = document.querySelector('.home');
 const typesEl = document.querySelector('.filter-types');
 const capacityEl = document.querySelector('.filter-capacity');
 const priceEl = document.querySelector('.filter-price');
@@ -74,5 +75,8 @@ button.addEventListener('click', () => {
   !isShow
     ? filterEl.classList.remove('visually-hidden')
     : filterEl.classList.add('visually-hidden');
+  isShow
+    ? homeEl.classList.remove('home-filter')
+    : homeEl.classList.add('home-filter');
   isShow = !isShow;
 });
