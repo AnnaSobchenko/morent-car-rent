@@ -28,7 +28,7 @@ const reviews = usersReviews
       
       <div class="date-stars">
         <p class="date">${review.date}</p>
-        <div class="rating">
+        <div class="rating-user">
           <svg>
             <use href="${svgIcon}#icon-fill-actions-star"></use>
           </svg>
@@ -47,7 +47,7 @@ const reviews = usersReviews
         </div>
       </div>
       </div>
-      <div class="review">
+      <div class="review-users-text show-less">
         <p>${review.review}</p>
       </div>
       </div>
@@ -56,3 +56,19 @@ const reviews = usersReviews
   .join('');
 
 usersReviewsEL.innerHTML = reviews;
+
+const fullReviewsButton = document.querySelector('.full-reviews');
+const fullReviewsEl = document.querySelectorAll('.review-users-text');
+
+let isShowAll = false;
+console.log('fullReviewsEl', fullReviewsEl);
+
+fullReviewsButton.addEventListener('click', () => {
+  for (let i = 0; i < fullReviewsEl.length; i ++ ) {
+    console.log('fullReviewsEl[i]', fullReviewsEl[i])
+    isShowAll
+      ? fullReviewsEl[i].classList.add('show-less')
+      : fullReviewsEl[i].classList.remove('show-less');
+  }
+  isShowAll = !isShowAll;
+});

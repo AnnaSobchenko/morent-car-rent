@@ -1,6 +1,5 @@
 <section class="container-morent home">
   <div class="filters visually-hidden">
-    <!-- <div class="left"></div> -->
     <div class="filter-box">
       <p class="filer-name">TYPE</p>
       <ul class="form-check filter-types-desk"></ul>
@@ -46,57 +45,63 @@
           </div>
         </div>
         <div class="card__views">
-          <picture class="bg-primary card__view1">
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view-mob-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view-mob-2x-min.png 2x
-              "
-              media="(max-width: 767px)" />
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view-desk-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view-desk-2x-min.png 2x
-              "
-              media="(min-width: 768px)" />
-            <img
-              src="./images/cars/nissan/nissan-view-desk-1x-min.png"
-              alt="profile-user"
-          /></picture>
-          <picture class="card__view2">
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view2-mob-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view2-mob-2x-min.png 2x
-              "
-              media="(max-width: 767px)" />
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view2-desk-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view2-desk-2x-min.png 2x
-              "
-              media="(min-width: 768px)" />
-            <img
-              src="./images/cars/nissan/nissan-view2-desk-1x-min.png"
-              alt="profile-user"
-          /></picture>
-          <picture class="card__view3">
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view3-mob-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view3-mob-2x-min.png 2x
-              "
-              media="(max-width: 767px)" />
-            <source
-              srcset="
-                ./images/cars/nissan/nissan-view3-desk-1x-min.png 1x,
-                ./images/cars/nissan/nissan-view3-desk-2x-min.png 2x
-              "
-              media="(min-width: 768px)" />
-            <img
-              src="./images/cars/nissan/nissan-view3-desk-1x-min.png"
-              alt="profile-user"
-          /></picture>
+          <div class="view1 active-view">
+            <picture class="bg-primary card__view1">
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view-mob-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view-mob-2x-min.png 2x
+                "
+                media="(max-width: 767px)" />
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view-desk-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view-desk-2x-min.png 2x
+                "
+                media="(min-width: 768px)" />
+              <img
+                src="./images/cars/nissan/nissan-view-desk-1x-min.png"
+                alt="profile-user"
+            /></picture>
+          </div>
+          <div class="view2">
+            <picture class="card__view2">
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view2-mob-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view2-mob-2x-min.png 2x
+                "
+                media="(max-width: 767px)" />
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view2-desk-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view2-desk-2x-min.png 2x
+                "
+                media="(min-width: 768px)" />
+              <img
+                src="./images/cars/nissan/nissan-view2-desk-1x-min.png"
+                alt="profile-user"
+            /></picture>
+          </div>
+          <div class="view3">
+            <picture class="card__view3">
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view3-mob-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view3-mob-2x-min.png 2x
+                "
+                media="(max-width: 767px)" />
+              <source
+                srcset="
+                  ./images/cars/nissan/nissan-view3-desk-1x-min.png 1x,
+                  ./images/cars/nissan/nissan-view3-desk-2x-min.png 2x
+                "
+                media="(min-width: 768px)" />
+              <img
+                src="./images/cars/nissan/nissan-view3-desk-1x-min.png"
+                alt="profile-user"
+            /></picture>
+          </div>
         </div>
       </div>
       <div class="card__describe">
@@ -162,8 +167,13 @@
         <div class="reviews-users-count">13</div>
       </div>
       <ul class="reviews-users__list"></ul>
+      <button class="full-reviews" type="button">
+        Show All
+        <svg>
+          <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
     </div>
-
     <div class="recent-car">
       <div class="view-all">
         <div class="title">Recent Car</div>

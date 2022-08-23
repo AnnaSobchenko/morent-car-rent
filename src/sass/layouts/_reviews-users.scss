@@ -8,13 +8,23 @@
     width: 44px;
     height: 44px;
     margin-right: 8px;
+    @media screen and (min-width: 768px) {
+      margin-right: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 56px;
+      height: 56px;
+    }
   }
 }
 
 .title-review {
   display: flex;
   flex-direction: column;
-  width: 243px;
+  //   width: 243px;
+  @media screen and (min-width: 768px) {
+    // width: 500px;
+  }
 
   .user {
     display: flex;
@@ -24,37 +34,70 @@
   .user-name {
     font-weight: 600;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     margin-bottom: 8px;
     letter-spacing: -0.01em;
     color: var(--secondary-text-color);
+    @media screen and (min-width: 768px) {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1440px) {
+      font-weight: 700;
+      font-size: 20px;
+    }
   }
 }
-.user-profession{
-    font-weight: 400;
+.user-profession {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--third-text-color);
-  
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
   }
-.review {
+  @media screen and (min-width: 1440px) {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+.review-users-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: -0.02em;
   color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
-.date-stars{
-    svg{
-        width: 10px;
-        height: 10px;
-    }
+
+.show-less {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 48px;
 }
-.date{
+
+.date-stars {
+  svg {
+    width: 10px;
+    height: 10px;
+    @media screen and (min-width: 768px) {
+      width: 16px;
+      height: 16px;
+      }
+  }
+}
+.date {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--third-text-color);
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.25;    
-    color: var(--third-text-color);
-    margin-bottom: 8px;
+    font-size: 14px;
+  }
 }
