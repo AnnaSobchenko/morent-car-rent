@@ -163,6 +163,7 @@
       }
       @media screen and (min-width: 1440px) {
         width: 492px;
+        margin-bottom: 0;
       }
       h2 {
         margin-bottom: 6px;
@@ -382,7 +383,6 @@
 .main-part {
   @media screen and (min-width: 1440px) {
     width: calc(100% - 360px);
-    padding-left: 32px;
   }
 }
 .left {

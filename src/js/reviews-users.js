@@ -61,11 +61,9 @@ const fullReviewsButton = document.querySelector('.full-reviews');
 const fullReviewsEl = document.querySelectorAll('.review-users-text');
 
 let isShowAll = false;
-console.log('fullReviewsEl', fullReviewsEl);
 
 fullReviewsButton.addEventListener('click', () => {
   for (let i = 0; i < fullReviewsEl.length; i ++ ) {
-    console.log('fullReviewsEl[i]', fullReviewsEl[i])
     isShowAll
       ? fullReviewsEl[i].classList.add('show-less')
       : fullReviewsEl[i].classList.remove('show-less');
