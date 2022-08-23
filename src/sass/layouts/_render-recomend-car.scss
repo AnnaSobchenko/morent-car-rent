@@ -1,80 +1,83 @@
-// .recomendation-car__list {
-  .model {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 240px;
-    height: 286px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
-    padding: 16px;
-    @media screen and (min-width: 768px) {
-      width: 317px;
-      height: 388px;
-    }
-    h3 {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.25;
-      display: flex;
-      align-items: center;
-      color: var(--secondary-text-color);
-    }}
+// // .recomendation-car__list {
+//   .model {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 240px;
+//     height: 286px;
+//     background-color: var(--secondary-bg-color);
+//     border-radius: 10px;
+//     padding: 16px;
+//     @media screen and (min-width: 768px) {
+//       width: 317px;
+//       height: 388px;
+//     }
+//     h3 {
+//       font-weight: 700;
+//       font-size: 16px;
+//       line-height: 1.25;
+//       display: flex;
+//       align-items: center;
+//       color: var(--secondary-text-color);
+//       @media screen and (min-width: 768px) {
+//         font-size: 20px;        
+//        }
+//     }}
 
-    .options-svg {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 28px;
-      svg {
-        width: 14px;
-        height: 14px;
-        margin-right: 4px;
-      }
-    }
-    .info {
-      display: flex;
-      align-items: center;
-    }
-    p.card-type {
-      margin-bottom: 58px;
-    }
-    .gradient {
-      width: 190px;
-      height: 60px;
-      margin-bottom: 58px;
-    }
-    .price-button-cars {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+//     .options-svg {
+//       display: flex;
+//       justify-content: space-between;
+//       margin-bottom: 28px;
+//       svg {
+//         width: 14px;
+//         height: 14px;
+//         margin-right: 4px;
+//       }
+//     }
+//     .info {
+//       display: flex;
+//       align-items: center;
+//     }
+//     p.card-type {
+//       margin-bottom: 58px;
+//     }
+//     .gradient {
+//       width: 190px;
+//       height: 60px;
+//       margin-bottom: 58px;
+//     }
+//     .price-button-cars {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//     }
   
-  .full-price-cars {
-    text-decoration: line-through;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    color: var(--third-text-color);
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-    }
-  }
-  .sale-price-cars {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.25;
-    margin-bottom: 4px;
-    @media screen and (min-width: 768px) {
-      font-size: 28px;
-    }
-    span {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 1.25;
-      color: var(--third-text-color);
-      @media screen and (min-width: 768px) {
-        font-size: 16px;
-      }
-    }
-  }
-// }
+//   .full-price-cars {
+//     text-decoration: line-through;
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 1.25;
+//     color: var(--third-text-color);
+//     @media screen and (min-width: 768px) {
+//       font-size: 16px;
+//     }
+//   }
+//   .sale-price-cars {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.25;
+//     margin-bottom: 4px;
+//     @media screen and (min-width: 768px) {
+//       font-size: 28px;
+//     }
+//     span {
+//       font-weight: 700;
+//       font-size: 12px;
+//       line-height: 1.25;
+//       color: var(--third-text-color);
+//       @media screen and (min-width: 768px) {
+//         font-size: 16px;
+//       }
+//     }
+//   }
+// // }

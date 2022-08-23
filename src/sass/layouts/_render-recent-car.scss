@@ -1,26 +1,27 @@
 // .recent-car__list {
-  .model {
+.model {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 286px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    width: 317px;
+    height: 388px;
+  }
+
+  .recent-card {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 240px;
-    height: 286px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
-    padding: 16px;
-    @media screen and (min-width: 768px) {
-      width: 317px;
-      height: 388px;
+    margin-bottom: 16px;
+    svg {
+      width: 20px;
+      height: 19px;
     }
 
-    .recent-card {
-      display: flex;
-      justify-content: space-between;
-      svg {
-        width: 20px;
-        height: 19px;
-      }
-    
     h3 {
       font-weight: 700;
       font-size: 16px;
@@ -30,65 +31,88 @@
       color: var(--secondary-text-color);
       margin-bottom: 4px;
       @media screen and (min-width: 768px) {
-       font-size: 20px;        
+        font-size: 20px;
       }
-    }}
-
-    .options-svg {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 28px;
-      font-size: 12px;
-      line-height: 1.25;
-      svg {
-        width: 14px;
-        height: 14px;
-        margin-right: 4px;
-      }
-    }
-    .info {
-      display: flex;
-      align-items: center;
-    }
-    p.card-type {
-      margin-bottom: 32px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.25;
-
-      color: var(--third-text-color);
-      @media screen and (min-width: 768px) {
-        margin-bottom: 52px;
-        font-weight: 700;
-        font-size: 14px;
-      }
-    }
-    img {
-      margin-bottom: 44px;
-      width: 180px;
-      height: auto;
-    }
-    .gradient {
-      width: 190px;
-      height: 60px;
-      margin-bottom: 58px;
     }
   }
-  .price-button-cars {
+
+  .options-svg {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 1.25;
+    svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 4px;
+    }
+  }
+  .info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
+  p.card-type {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--third-text-color);
+    @media screen and (min-width: 768px) {
+      margin-bottom: 52px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+  .image-box {
+   height: 84px;
+    display: flex;
+    margin-bottom: 32px;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    img {
+      width: 180px;
+      // height: auto;
+    }
+  }
+  .gradient {
+    width: 190px;
+    height: 60px;
+    margin-bottom: 58px;
+  }
+}
+.price-button-cars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 // }
-  .rentalnow{
-    font-weight: 600;
-font-size: 12px;
-line-height: 1.25;
-width: 100px;
-height: 36px;
+.rentalnow {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 100px;
+  height: 36px;
+}
+.full-price-cars {
+  text-decoration: line-through;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--third-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
   }
-  .full-price-cars {
-    text-decoration: line-through;
+}
+.sale-price-cars {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  span {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
@@ -97,22 +121,4 @@ height: 36px;
       font-size: 16px;
     }
   }
-  .sale-price-cars {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 4px;
-    @media screen and (min-width: 768px) {
-      font-size: 28px;
-    }
-    span {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 1.25;
-      color: var(--third-text-color);
-      @media screen and (min-width: 768px) {
-        font-size: 16px;
-      }
-    }
-  }
-
+}

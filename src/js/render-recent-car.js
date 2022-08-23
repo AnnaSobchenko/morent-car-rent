@@ -53,9 +53,9 @@ const cards = cars
        <use href="${icons}#icon-${favorite}"></use>     
      </svg>
    </div>
-       <img src=${imagesrc} alt="car" />
-       
-       
+   <div class="image-box">
+   <img src=${imagesrc} alt="car" />
+   </div>
      <div class="options-svg">
        <div class="info">
          <svg>

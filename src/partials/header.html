@@ -29,32 +29,31 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          
-            <ul class="options-burger">
-              <li class="notification">
-                <svg class="icon-filter">
-                  <use href="./images/symbol-defs.svg#icon-heart-fill"></use>
-                </svg>
-              </li>
-              <li class="notification">
-                <span
-                  class="position-absolute translate-middle bg-danger border border-light rounded-circle"
-                >
-                  <span class="visually-hidden">New alerts</span>
-                </span>
-                <svg class="icon-notification">
-                  <use href="./images/symbol-defs.svg#icon-notification"></use>
-                </svg>
-              </li>
-              <li class="notification">
-                <svg class="icon-filter">
-                  <use href="./images/symbol-defs.svg#icon-setting"></use>
-                </svg>
-              </li>
-            </ul>
-            <!-- Some text as placeholder. In real life you can have the elements you
+          <ul class="options-burger">
+            <li class="notification">
+              <svg class="icon-filter">
+                <use href="./images/symbol-defs.svg#icon-heart-fill"></use>
+              </svg>
+            </li>
+            <li class="notification">
+              <span
+                class="position-absolute translate-middle bg-danger border border-light rounded-circle"
+              >
+                <span class="visually-hidden">New alerts</span>
+              </span>
+              <svg class="icon-notification">
+                <use href="./images/symbol-defs.svg#icon-notification"></use>
+              </svg>
+            </li>
+            <li class="notification">
+              <svg class="icon-filter">
+                <use href="./images/symbol-defs.svg#icon-setting"></use>
+              </svg>
+            </li>
+          </ul>
+          <!-- Some text as placeholder. In real life you can have the elements you
           have chosen. Like, text, images, lists, etc. -->
-          
+
           <!-- <div class="dropdown mt-3">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -91,17 +90,57 @@
             aria-label="Username"
             aria-describedby="basic-addon1"
           />
-          <button class="btn btn-outline-primary btn-filter btn-desktop">
+          <button class="btn btn-filter btn-desktop">
             <svg class="icon-filter">
               <use href="./images/symbol-defs.svg#icon-filter"></use>
             </svg>
           </button>
         </div>
-        <button class="btn btn-outline-primary btn-filter btn-mobile">
+        <button
+          class="btn btn-outline-primary btn-filter btn-mobile"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasFilter"
+          aria-controls="offcanvasFilter"
+        >
           <svg class="icon-filter">
             <use href="./images/symbol-defs.svg#icon-filter"></use>
           </svg>
         </button>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-start filter-mobile"
+      tabindex="-1"
+      id="offcanvasFilter"
+      aria-labelledby="offcanvasFilterLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title visually-hidden" id="offcanvasFilterLabel">
+          Filter
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body body-filter">
+        <p class="filer-name">TYPE</p>
+        <ul class="form-check filter-types"></ul>
+        <p class="filer-name">CAPACITY</p>
+        <ul class="form-check filter-capacity"></ul>
+        <p class="filer-name">PRICE</p>
+        <div class="filter-price">
+          <!-- <label for="customRange2" class="form-label visually-hidden">price range</label>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="5"
+            id="customRange2"
+          /> -->
+        </div>
       </div>
     </div>
     <ul class="options">

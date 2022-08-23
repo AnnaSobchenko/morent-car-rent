@@ -5,6 +5,9 @@
     padding-top: 80px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1440px) {
+    background-color: var(--secondary-bg-color);
+  }
   .footer-info {
     @media screen and (min-width: 768px) {
       display: flex;
